@@ -1,0 +1,16 @@
+{
+	"name":"exprensesharingapi",
+	"version":"1.0.0",
+	"desciption":"api for expense management",
+	"scipts":{
+		"start":"node app"
+	},
+	"dependencies":{
+		"express":"^4.16.4",
+		"express-session":"^1.17.1"
+	},
+
+	"author":"Arjit Khandelwal",
+	"license":"ISC"
+
+}
