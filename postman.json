@@ -1,0 +1,31 @@
+{
+    "info": {
+        "name": "RESTer",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "expenditureSharing",
+            "item": [
+                {
+                    "request": {
+                        "url": "http://localhost:3000/api/getBalances",
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"data\": [\n        {\n            \"userId\": \"01\",\n            \"expense\": 100,\n            \"method\": \"equal\"\n        },\n        {\n            \"userId\": \"02\",\n            \"expense\": \"100\",\n            \"method\": \"exact\",\n            \"splitDetails\": [\n                {\n                    \"userId\": \"01\",\n                    \"value\": 30\n                },\n                {\n                    \"userId\": \"02\",\n                    \"value\": 60\n                },\n                {\n                    \"userId\": \"01\",\n                    \"value\": 10\n                }\n            ]\n        },\n        {\n            \"userId\": \"03\",\n            \"expense\": \"100\",\n            \"method\": \"percentage\",\n            \"splitDetails\": [\n                {\n                    \"userId\": \"01\",\n                    \"value\": 25\n                },\n                {\n                    \"userId\": \"02\",\n                    \"value\": 25\n                },\n                {\n                    \"userId\": \"01\",\n                    \"value\": 50\n                }\n            ]\n        }\n    ]\n}"
+                        }
+                    },
+                    "id": "rester-1",
+                    "name": "API"
+                }
+            ]
+        }
+    ]
+}
